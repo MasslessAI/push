@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🌐 Push website
+    url: https://push.computer
+    about: Download Push and read the docs.
+  - name: 🔒 Report a security issue
+    url: https://github.com/MasslessAI/push/security/policy
+    about: Please report security vulnerabilities privately — not as a public issue.

@@ -1,0 +1,61 @@
+name: 🐛 Bug report
+description: Something in Push isn't working the way it should.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! The more detail you give, the faster we can fix it.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which app is affected?
+      options:
+        - macOS
+        - iOS
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: "macOS: Push → About Push.  iOS: Settings → About."
+      placeholder: "e.g. 1.10.75"
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: "e.g. macOS 15.2 / iOS 18.5"
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug — what you expected, and what actually happened.
+      placeholder: I clicked Run on an issue and the terminal tab opened but never started the agent…
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: How can we make it happen?
+      placeholder: |
+        1. Open Push
+        2. …
+        3. See the problem
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or screen recording
+      description: Drag-and-drop here. A short recording is worth a thousand words.
+    validations:
+      required: false
